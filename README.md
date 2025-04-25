@@ -6,7 +6,6 @@ This project implements a deep learning pipeline for human activity recognition 
 
 - [Overview](#overview)
 - [Dataset](#dataset)
-- [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Model Architecture](#model-architecture)
@@ -25,7 +24,6 @@ Human Activity Recognition (HAR) is a key problem in ubiquitous computing and we
 - **Description:** The WISDM dataset contains labeled accelerometer data collected from smartphones carried by 36 users performing six activities.
 - **Activities:** Walking, Jogging, Upstairs, Downstairs, Sitting, Standing
 
-## Project Structure
 
 ## Installation
 
