@@ -24,7 +24,6 @@ Human Activity Recognition (HAR) is a key problem in ubiquitous computing and we
 - **Description:** The WISDM dataset contains labeled accelerometer data collected from smartphones carried by 36 users performing six activities.
 - **Activities:** Walking, Jogging, Upstairs, Downstairs, Sitting, Standing
 
-
 ## Installation
 
 1. Clone this repository and navigate to the project directory.
@@ -32,7 +31,7 @@ Human Activity Recognition (HAR) is a key problem in ubiquitous computing and we
     ```bash
     pip install numpy pandas matplotlib scikit-learn torch
     ```
-
+    
 ## Usage
 
 1. **Data Preprocessing:**  
