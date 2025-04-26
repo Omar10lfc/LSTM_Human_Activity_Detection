@@ -29,7 +29,7 @@ Human Activity Recognition (HAR) is a key problem in ubiquitous computing and we
 1. Clone this repository and navigate to the project directory.
 2. Install the required Python packages:
     ```bash
-    pip install numpy pandas matplotlib scikit-learn torch
+    pip install numpy pandas matplotlib scikit-learn torch scipy
     ```
     
 ## Usage
