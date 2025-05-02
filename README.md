@@ -61,7 +61,7 @@ Human Activity Recognition (HAR) is a key problem in ubiquitous computing and we
    - Ploted ROC-AUC curves for each activity class.
 
 8. **Run the Notebook:**  
-   Open `LSTM_Human_Activity_Detection.ipynb` in Jupyter Notebook and execute the cells step by step.
+   Open `Human_Activity_Recognition_with_LSTM.ipynb` in Jupyter Notebook and execute the cells step by step.
 
 ## Model Architecture
 
