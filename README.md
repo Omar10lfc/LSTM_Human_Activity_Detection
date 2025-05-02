@@ -34,40 +34,44 @@ Human Activity Recognition (HAR) is a key problem in ubiquitous computing and we
     
 ## Usage
 
-1. **Data Preprocessing:**  
-   - Load the raw WISDM data.
-   - Clean and preprocess the data (handle missing values, convert types, normalize features).
-   - Encode activity labels numerically.
+1. **Data Preprocessing and EDA:**  
+   - cleaned raw accelerometer data, handles missing values, and engineers features such as acceleration magnitude.
+   - Visualized the activity distribution and checked for outliers and removed them.
+   - Splited data into training, validation, and test sets; applied normalization and label encoding.
 
 2. **Window Segmentation:**  
    - Segment the time-series data into overlapping windows.
    - Only keep windows containing a single activity.
 
-3. **Model Training:**  
+3. **Data Augmentation:**
+   - Applied jittering, scaling, permutation, and random rotation to improve model robustness.
+  
+4. **Class Imbalance Handling:**
+   - Used weighted sampling to solve this issue.
+     
+6. **Model Training:**  
    - Convert data to PyTorch tensors.
    - Define and train the LSTM model.
-   - Track training and validation loss/accuracy.
+   - Includes early stopping and tracks loss/accuracy over epochs.
 
-4. **Evaluation & Visualization:**  
+7. **Evaluation & Visualization:**  
    - Plot loss and accuracy curves.
-   - Visualize predictions vs. actual labels.
-   - Use t-SNE to visualize LSTM hidden states.
-   - Plot ROC-AUC curves for each activity class.
+   - Report accuracy, precision, recall, F1-score and confusion matrix.
+   - Used t-SNE to visualize LSTM hidden states.
+   - Ploted ROC-AUC curves for each activity class.
 
-5. **Run the Notebook:**  
+8. **Run the Notebook:**  
    Open `LSTM_Human_Activity_Detection.ipynb` in Jupyter Notebook and execute the cells step by step.
 
 ## Model Architecture
 
-- **Input:** Windowed accelerometer data (x, y, z, magnitude)
-- **Model:** LSTM layers followed by fully connected layers
-- **Output:** Activity class probabilities
+- Implemented a multi-layer bidirectional LSTM using PyTorch for sequence modeling.
 
 ## Results
 
-- **Accuracy:** High classification accuracy on the test set.
-- **ROC-AUC:** Near-perfect ROC-AUC scores for all activity classes.
-- **Visualizations:** Clear separation of activities in t-SNE and ROC-AUC plots.
+- **High Classification Performance:** Achieves strong accuracy and F1-scores across all activity classes.
+- **Robust Generalization:** Model generalizes well to unseen test data, as shown by ROC-AUC and t-SNE visualizations.
+- **Effective Feature Learning:** LSTM hidden states show clear class separation in t-SNE plot.
 
 ## References
 
